@@ -1,6 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
 import { logout } from '../service/authorization.js'
-// import Container from './Container.js'
 import logo from '../assets/logo.png'
 import s from './components.module.css'
 
@@ -11,13 +10,13 @@ const Header = ({ setIsLoggedIn }) => {
   }
   return (
     <div className={s.header}>
-      <div className={s.wrapper}>
-        <Link className={s.logo_img} to="/">
-          <img src={logo} alt="logo" className={s.logo} />
-        </Link>
-        <p className={s.logo}>Mortgage Calculator</p>
+      <div className={s.content}>
+        <div className={s.wrapper}>
+          <Link className={s.logo_img} to="/">
+            <img src={logo} alt="logo" className={s.logo} />
+          </Link>
+          <p className={s.logo}>Mortgage Calculator</p>
 
-        <div className={s.content}>
           {isLoggedIn ? (
             <>
               <ul className={s.list}>
@@ -35,7 +34,7 @@ const Header = ({ setIsLoggedIn }) => {
                   <NavLink
                     to="/calculator"
                     alt="calculator page"
-                    className={s.link}
+                    className={s.link_nav}
                     activeClassName={s.active_link}
                   >
                     Calculator

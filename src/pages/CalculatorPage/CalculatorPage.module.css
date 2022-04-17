@@ -1,16 +1,15 @@
 .item {
   margin-bottom: 10px;
-  width: 500px;
+  width: 270px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .calculator_page {
-  padding: 30px 0 50px 0;
-
+  padding: 0.5rem;
   width: fit-content;
-  margin: 5rem;
+  margin-top: 1.5rem;
 
   background-color: #e9f1f7;
   border: 0.15rem solid #1a65c757;
@@ -19,12 +18,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-
-  padding: 1rem;
 }
 
 .payment {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .flex {
@@ -33,7 +30,7 @@
 }
 
 .form {
-  margin-right: 30px;
+  margin-right: 25px;
 }
 
 .list {

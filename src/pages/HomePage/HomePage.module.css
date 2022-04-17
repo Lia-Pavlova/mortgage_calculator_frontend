@@ -54,6 +54,7 @@
   transform: translateX(-50%);
   transition: all 0.7s;
 }
+
 .btn:hover {
   background: linear-gradient(
     to right,

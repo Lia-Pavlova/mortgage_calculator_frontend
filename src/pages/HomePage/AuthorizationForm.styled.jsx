@@ -6,7 +6,7 @@ import { Paper } from '@mui/material'
 export const Container = styled.div`
   box-sizing: border-box;
   margin: 60px auto;
-  width: 400px;
+  width: 300px;
 `
 
 export const StyledPaper = styled(Paper)`

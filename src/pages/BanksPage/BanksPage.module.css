@@ -4,11 +4,8 @@
 
 .btn {
   cursor: pointer;
-
-  margin-left: 25px;
-  margin-top: 10px;
-  width: 100px;
-  height: 30px;
+  margin: 10px;
+  width: 25%;
   border: solid 1px #777f8b46;
   color: #032e61;
   box-shadow: 2px 2px 5px #5f9edd, -1px -1px 6px #84b2e1;
@@ -20,9 +17,10 @@
   );
   background-size: 200%;
   background-position: 100%;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
   transition: all 0.7s;
 }
+
 .btn:hover {
   background: linear-gradient(
     to right,
@@ -37,7 +35,7 @@
 }
 
 .not_title {
-  font-family: Dancing;
+  font-family: Dancing, cursive;
   margin-top: 20px;
 }
 
@@ -46,7 +44,7 @@
   margin-left: 50%;
   margin-bottom: 15px;
   width: 100px;
-  height: 30px;
+  height: 35px;
   border-radius: 1rem 0;
   border: solid 1px #777f8b46;
   color: #032e61;
@@ -62,6 +60,7 @@
   transform: translateX(-50%);
   transition: all 0.7s;
 }
+
 .btn_add:hover {
   background: linear-gradient(
     to right,
@@ -179,31 +178,4 @@
     width: 14rem;
     word-wrap: break-word;
   }
-}
-
-.card {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 50px;
-  width: 20rem;
-  padding: 0.3rem 1rem 0.8rem;
-  margin: 0.5rem 0.8rem;
-  text-align: left;
-
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  background-color: #e9f1f7;
-  border: 0.15rem solid #3286f0;
-  border-radius: 1rem;
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  cursor: pointer;
-  background-color: #1a66c7;
-  border: 0.15rem solid #1a66c7;
 }
