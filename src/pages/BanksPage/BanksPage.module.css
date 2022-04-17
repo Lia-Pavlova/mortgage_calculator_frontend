@@ -9,12 +9,7 @@
   border: solid 1px #777f8b46;
   color: #032e61;
   box-shadow: 2px 2px 5px #5f9edd, -1px -1px 6px #84b2e1;
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 100%;
   /* transform: translateX(-50%); */
@@ -22,12 +17,7 @@
 }
 
 .btn:hover {
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 0px;
   box-shadow: none;
@@ -49,12 +39,7 @@
   border: solid 1px #777f8b46;
   color: #032e61;
   box-shadow: 2px 2px 5px #5f9edd, -1px -1px 6px #84b2e1;
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 100%;
   transform: translateX(-50%);
@@ -62,12 +47,7 @@
 }
 
 .btn_add:hover {
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 0px;
   box-shadow: none;

@@ -5,6 +5,8 @@
   padding: 0 5px;
   display: flex;
   align-items: center;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .logo_img {
@@ -20,6 +22,7 @@
 .header {
   background-color: rgba(0, 63, 100, 0.8);
   padding: 10px 0px;
+  font-family: Dancing, cursive;
 }
 
 .content {
@@ -55,7 +58,7 @@
 }
 
 .logo {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -69,12 +72,13 @@
 }
 
 .link_nav {
-  color: rgb(0, 49, 163);
+  color: rgb(31, 181, 201);
   text-decoration: none;
 }
 
 .active_link {
-  color: rgb(88, 34, 82);
+  color: rgb(4, 218, 247);
+
   text-decoration: none;
 }
 
@@ -85,12 +89,7 @@
   border: solid 1px #777f8b46;
   color: #032e61;
 
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 100%;
 
@@ -98,12 +97,7 @@
 }
 
 .btn_logout:hover {
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 0px;
   box-shadow: none;
@@ -186,12 +180,7 @@
   border: solid 1px #777f8b46;
   color: #032e61;
   box-shadow: 2px 2px 5px #5f9edd, -1px -1px 6px #84b2e1;
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 100%;
   margin-top: 20px;
@@ -201,12 +190,7 @@
 }
 
 .btn_submit:hover {
-  background: linear-gradient(
-    to right,
-    #058ef79a 0%,
-    #058ef7 50%,
-    #058ef79a 100%
-  );
+  background: linear-gradient(to right, #058ef79a 0%, #058ef7 50%, #058ef79a 100%);
   background-size: 200%;
   background-position: 0px;
   box-shadow: none;
@@ -228,7 +212,7 @@
 }
 
 .link_footer {
-  color: rgb(0, 49, 163);
+  color: rgb(31, 181, 201);
   margin-left: 10px;
   text-decoration: none;
 }
