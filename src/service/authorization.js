@@ -1,10 +1,7 @@
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-axios.defaults.baseURL =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:5000'
-    : 'https://eliftech-calculator.herokuapp.com/'
+axios.defaults.baseURL = 'https://mortgage-calculator-lia.herokuapp.com'
 
 const token = {
   set(token) {

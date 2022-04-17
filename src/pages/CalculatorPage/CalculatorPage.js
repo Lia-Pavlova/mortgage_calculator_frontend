@@ -6,7 +6,7 @@ const CalculatorPage = () => {
 
   const [initialLoan, setInitialLoan] = useState()
   const [downPayment, setDownPayment] = useState()
-  const [selectBankOpen, setSelectBankOpen] = useState(false)
+
   const [selectedBank, setSelectedBank] = useState()
   const [payment, setPayment] = useState()
 
@@ -21,6 +21,7 @@ const CalculatorPage = () => {
       const payment = Math.round(result * 100) / 100
       setPayment(payment)
     }
+    // eslint-disable-next-line
   }, [selectedBank])
 
   const handleChange = (e) => {
@@ -37,48 +38,66 @@ const CalculatorPage = () => {
     }
   }
 
-  const availableBanks = banks
-    .filter((el) => el?.maximumLoan >= initialLoan)
-    ?.filter((el) => el?.minimumDownPayment <= downPayment)
-
-  const chooseBank = (e) => {
-    if (availableBanks?.length === 0) {
-      return
+  const canChooseBank = (bank) => {
+    if (
+      bank.maximumLoan >= initialLoan &&
+      bank.minimumDownPayment <= downPayment
+    ) {
+      return ''
+    } else {
+      return 'disabled'
     }
-    if (e.target.id && e.target.id !== 'selectedBank') {
-      e.currentTarget.querySelector('#selectedBank').textContent =
-        e.target.textContent
-      setSelectedBank(e.target.id)
-    }
-    setSelectBankOpen((prev) => !prev)
   }
 
   return (
     <div className={s.calculator_page}>
       <div className={s.flex}>
-        <form onChange={handleChange} className={s.form}>
-          <div className={s.item}>
-            <label htmlFor="initialLoan">Initial loan</label>
-            <input type="text" id="initialLoan" value={initialLoan} />
-          </div>
-          <div className={s.item}>
-            <label htmlFor="downPayment">Down payment</label>
-            <input type="text" id="downPayment" value={downPayment} />
-          </div>
-          <div onClick={chooseBank} className={s.select}>
-            <p id="selectedBank">Chose the bank</p>
-            <div className={`${s.option} ${selectBankOpen ? s.open : ''}`}>
-              {availableBanks?.map((el) => {
-                return (
-                  <p id={el?._id} key={el?._id}>
-                    {el?.bankName}
-                  </p>
-                )
-              })}
+        <div>
+          <form onChange={handleChange} className={s.form}>
+            <div className={s.item}>
+              <label htmlFor="initialLoan">Initial loan</label>
+              <input type="text" id="initialLoan" value={initialLoan} />
             </div>
-          </div>
-        </form>
-
+            <div className={s.item}>
+              <label htmlFor="downPayment">Down payment</label>
+              <input type="text" id="downPayment" value={downPayment} />
+            </div>
+          </form>
+          <ul className={s.list}>
+            {banks.map((bank) => {
+              return (
+                <li
+                  key={bank._id}
+                  className={s.list_item}
+                  onClick={() => {
+                    setSelectedBank(bank._id)
+                  }}
+                >
+                  <button disabled={canChooseBank(bank)}>
+                    <p className={s.bank_text}>
+                      <span>Name:</span> <span>{bank?.bankName}</span>
+                    </p>
+                    <p className={s.bank_text}>
+                      <span>Interest rate:</span>{' '}
+                      <span>{bank?.interestRate}%</span>
+                    </p>
+                    <p className={s.bank_text}>
+                      <span>Maximum loan:</span>{' '}
+                      <span>{bank?.maximumLoan}</span>
+                    </p>
+                    <p className={s.bank_text}>
+                      <span>Minimum down payment:</span>{' '}
+                      <span>{bank?.minimumDownPayment}</span>
+                    </p>
+                    <p className={s.bank_text}>
+                      <span>Loan term:</span> <span>{bank?.loanTerm}</span>
+                    </p>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
         {payment ? (
           <div>
             <p className={s.payment}>Monthly mortgage payment: {payment}</p>

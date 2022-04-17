@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { createBank, updateBank } from '../../service/bank.js'
+import { createBank, editBank } from '../service/bank.js'
 import s from './components.module.css'
 
 const BankForm = ({ onToggle, setBanks, selectedBank }) => {
@@ -48,7 +48,7 @@ const BankForm = ({ onToggle, setBanks, selectedBank }) => {
       loanTerm,
     }
     if (selectedBank) {
-      updateBank({ ...selectedBank, ...newBank }).then((data) => {
+      editBank({ ...selectedBank, ...newBank }).then((data) => {
         const listBanks = JSON.parse(localStorage.getItem('banks'))
         const newListBanks = listBanks.map((el) => {
           if (el._id === data._id) {
@@ -85,13 +85,14 @@ const BankForm = ({ onToggle, setBanks, selectedBank }) => {
   return (
     <div className={s.box}>
       <button
-        className={s.btn_close}
+        className={s.close_btn}
         onClick={() => {
           onToggle()
         }}
       >
-        X
+        ✖
       </button>
+
       <form onSubmit={handleSubmit} onChange={handleChange}>
         <div className={s.form_item}>
           <label htmlFor="bankName">Name</label>

@@ -27,6 +27,10 @@ const deleteBank = async (id) => {
   try {
     const { data } = await axios.delete(`/bank/delete/${id}`)
     toast.success('Successfully deleted')
+    const banksList = JSON.parse(localStorage.getItem('banks'))
+    const newBanksList = banksList.filter((bank) => bank._id !== id)
+    localStorage.setItem('banks', JSON.stringify(newBanksList))
+
     return data.data
   } catch (err) {
     toast.error('An error occurred, please try again later')

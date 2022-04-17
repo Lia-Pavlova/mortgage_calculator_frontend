@@ -6,7 +6,7 @@ const Footer = () => {
       <p className={s.text}>
         &copy; 2022
         <a
-          className={s.link}
+          className={s.link_footer}
           href="https://github.com/Lia-Pavlova"
           rel="noopener noreferer  "
         >

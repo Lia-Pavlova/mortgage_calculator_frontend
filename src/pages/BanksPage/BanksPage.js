@@ -46,10 +46,24 @@ const BanksPage = () => {
 
   return (
     <div className={s.banks_page}>
+      <div className={s.main}>
+        <div className={s.page_content}>
+          <div className={s.paragraph_container}>
+            <p className={s.paragraph_title}>
+              Welcome to the Mortgage calculator!
+            </p>
+            <p className={s.paragraph}>
+              In this web application you can create, edit, delete banks and
+              calculate your mortgage payment plan.
+            </p>
+            <p className={s.paragraph_foot}>Enjoy it!</p>
+          </div>
+        </div>
+      </div>
       {banks?.length > 0 ? (
         <>
           <button
-            className={s.btn}
+            className={s.btn_add}
             onClick={() => {
               toggleModal()
             }}
