@@ -36,6 +36,11 @@
   border: solid 1px #fcfcfc;
 }
 
+.not_title {
+  font-family: Dancing;
+  margin-top: 20px;
+}
+
 .btn_add {
   cursor: pointer;
   margin-left: 50%;

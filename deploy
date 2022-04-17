@@ -1,0 +1,201 @@
+Script started on Sun Apr 17 22:20:10 2022
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ deploy
+bash: deploy: command not found
+bash-3.2$ npm run deploy
+
+> eliftech-frontend@0.1.0 predeploy /Users/Li/Documents/GitHub/eliftech-frontend
+> npm run build
+
+
+> eliftech-frontend@0.1.0 build /Users/Li/Documents/GitHub/eliftech-frontend
+> react-scripts build
+
+Creating an optimized production build...
+[32mCompiled successfully.[39m
+[32m[39m
+File sizes after gzip:
+
+  64.62 KB              [2mbuild/static/js/[22m[36m7.e83b7b4a.chunk.js[39m
+  54.24 KB ([32m-10.34 KB[39m)  [2mbuild/static/js/[22m[36m6.d604ddbc.chunk.js[39m
+  2.64 KB               [2mbuild/static/css/[22m[36m7.f4c56af9.chunk.css[39m
+  2.6 KB ([33m+437 B[39m)       [2mbuild/static/js/[22m[36mBanksPage.f81c33a9.chunk.js[39m
+  2.24 KB ([33m+401 B[39m)      [2mbuild/static/js/[22m[36mmain.3c37c595.chunk.js[39m
+  1.65 KB ([33m+1.07 KB[39m)    [2mbuild/static/css/[22m[36mmain.de23d994.chunk.css[39m
+  1.59 KB ([33m+26 B[39m)       [2mbuild/static/js/[22m[36mruntime-main.4415f001.js[39m
+  1.52 KB ([33m+663 B[39m)      [2mbuild/static/js/[22m[36mHomePage.bc11752e.chunk.js[39m
+  1.04 KB ([33m+80 B[39m)       [2mbuild/static/js/[22m[36mCalculatorPage.15904c65.chunk.js[39m
+  1004 B ([33m+927 B[39m)       [2mbuild/static/css/[22m[36mBanksPage.91e570a7.chunk.css[39m
+  443 B ([33m+361 B[39m)        [2mbuild/static/css/[22m[36mCalculatorPage.13b5228a.chunk.css[39m
+  310 B ([33m+32 B[39m)         [2mbuild/static/js/[22m[36mNotFound.a573bd60.chunk.js[39m
+  149 B ([33m+73 B[39m)         [2mbuild/static/css/[22m[36mNotFound.c78a65e7.chunk.css[39m
+
+The project was built assuming it is hosted at [32m/[39m.
+You can control this with the [32mhomepage[39m field in your [36mpackage.json[39m.
+
+The [36mbuild[39m folder is ready to be deployed.
+You may serve it with a static server:
+
+  [36mnpm[39m install -g serve
+  [36mserve[39m -s build
+
+Find out more about deployment here:
+
+  [33mhttps://cra.link/deployment[39m
+
+
+> eliftech-frontend@0.1.0 deploy /Users/Li/Documents/GitHub/eliftech-frontend
+> netlify deploy -p
+
+[32mDeploy path: [39m       /Users/Li/Documents/GitHub/eliftech-frontend/build
+[32mConfiguration path: [39m/Users/Li/Documents/GitHub/eliftech-frontend/netlify.toml
+Deploying to main site URL...
+[?25l[36m⠋[39m Hashing files...[2K[1G[?25h[32m✔[39m Finished hashing 36 files
+[?25l[36m⠋[39m CDN diffing files...[2K[1G[36m⠙[39m CDN diffing files...[2K[1G[36m⠹[39m CDN diffing files...[2K[1G[36m⠸[39m CDN diffing files...[2K[1G[36m⠼[39m CDN diffing files...[2K[1G[36m⠴[39m CDN diffing files...[2K[1G[36m⠦[39m CDN diffing files...[2K[1G[36m⠧[39m CDN diffing files...[2K[1G[36m⠇[39m CDN diffing files...[2K[1G[36m⠏[39m CDN diffing files...[2K[1G[36m⠋[39m CDN diffing files...[2K[1G[?25h[32m✔[39m CDN requesting 14 files
+[?25l[36m⠋[39m Uploading 14 files[2K[1G[36m⠙[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠹[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠸[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠼[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠴[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠦[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠧[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠇[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠏[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠋[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠙[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠹[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠸[39m (4/14) Uploading static/js/HomePage.bc11752e.chunk.js.map...[2K[1G[36m⠼[39m (8/14) Uploading static/js/BanksPage.f81c33a9.chunk.js.map...[2K[1G[36m⠴[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠦[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠧[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠇[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠏[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠋[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠙[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠹[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠸[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠼[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠴[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠦[39m (9/14) Uploading static/js/BanksPage.f81c33a9.chunk.js...[2K[1G[36m⠧[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠇[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠏[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠋[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠙[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠹[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠸[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠼[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠴[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠦[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠧[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠇[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠏[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠋[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠙[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠹[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠸[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠼[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠴[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠦[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠧[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠇[39m (13/14) Uploading asset-manifest.json...[2K[1G[36m⠏[39m (13/14) Uploading asset-manifest.json...[2K[1G[?25h[32m✔[39m Finished uploading 14 assets
+[?25l[36m⠋[39m Waiting for deploy to go live...[2K[1G[36m⠙[39m Waiting for deploy to go live...[2K[1G[36m⠹[39m Waiting for deploy to go live...[2K[1G[36m⠸[39m Waiting for deploy to go live...[2K[1G[36m⠼[39m Waiting for deploy to go live...[2K[1G[36m⠴[39m Waiting for deploy to go live...[2K[1G[36m⠦[39m Waiting for deploy to go live...[2K[1G[36m⠧[39m Waiting for deploy to go live...[2K[1G[36m⠇[39m Waiting for deploy to go live...[2K[1G[36m⠏[39m Waiting for deploy to go live...[2K[1G[36m⠋[39m Waiting for deploy to go live...[2K[1G[36m⠙[39m Waiting for deploy to go live...[2K[1G[36m⠹[39m Waiting for deploy to go live...[2K[1G[36m⠸[39m Waiting for deploy to go live...[2K[1G[36m⠼[39m Waiting for deploy to go live...[2K[1G[36m⠴[39m Waiting for deploy to go live...[2K[1G[36m⠦[39m Waiting for deploy to go live...[2K[1G[36m⠧[39m Waiting for deploy to go live...[2K[1G[36m⠇[39m Waiting for deploy to go live...[2K[1G[36m⠏[39m Waiting for deploy to go live...[2K[1G[36m⠋[39m Waiting for deploy to go live...[2K[1G[36m⠙[39m Waiting for deploy to go live...[2K[1G[36m⠹[39m Waiting for deploy to go live...[2K[1G[36m⠸[39m Waiting for deploy to go live...[2K[1G[36m⠼[39m Waiting for deploy to go live...[2K[1G[36m⠴[39m Waiting for deploy to go live...[2K[1G[36m⠦[39m Waiting for deploy to go live...[2K[1G[36m⠧[39m Waiting for deploy to go live...[2K[1G[36m⠇[39m Waiting for deploy to go live...[2K[1G[36m⠏[39m Waiting for deploy to go live...[2K[1G[36m⠋[39m Waiting for deploy to go live...[2K[1G[36m⠙[39m Waiting for deploy to go live...[2K[1G[36m⠹[39m Waiting for deploy to go live...[2K[1G[36m⠸[39m Waiting for deploy to go live...[2K[1G[36m⠼[39m Waiting for deploy to go live...[2K[1G[36m⠴[39m Waiting for deploy to go live...[2K[1G[36m⠦[39m Waiting for deploy to go live...[2K[1G[36m⠧[39m Waiting for deploy to go live...[2K[1G[36m⠇[39m Waiting for deploy to go live...[2K[1G[36m⠏[39m Waiting for deploy to go live...[2K[1G[36m⠋[39m Waiting for deploy to go live...[2K[1G[36m⠙[39m Waiting for deploy to go live...[2K[1G[36m⠹[39m Waiting for deploy to go live...[2K[1G[36m⠸[39m Waiting for deploy to go live...[2K[1G[36m⠼[39m Waiting for deploy to go live...[2K[1G[36m⠴[39m Waiting for deploy to go live...[2K[1G[36m⠦[39m Waiting for deploy to go live...[2K[1G[36m⠧[39m Waiting for deploy to go live...[2K[1G[36m⠇[39m Waiting for deploy to go live...[2K[1G[36m⠏[39m Waiting for deploy to go live...[2K[1G[36m⠋[39m Waiting for deploy to go live...[2K[1G[?25h[32m✔[39m Deploy is live!
+
+[32mLogs: [39m             https://app.netlify.com/sites/mortgage-calculator-by-lia/deploys/625c68a81f553d1ebd90bbcf
+[32mUnique Deploy URL: [39mhttps://625c68a81f553d1ebd90bbcf--mortgage-calculator-by-lia.netlify.app
+[32mWebsite URL: [39m      https://mortgage-calculator-by-lia.netlify.app
+[?25hbash-3.2$ npm run deploy[C[C[C[C[C[C[C[C[C[C[8Pdeploynpm run deploy[5Pstart
+
+> eliftech-frontend@0.1.0 start /Users/Li/Documents/GitHub/eliftech-frontend
+> react-scripts start
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://192.168.0.135/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /Users/Li/Documents/GitHub/eliftech-frontend/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1meliftech-frontend[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.135:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+^C
+bash-3.2$ npm start
+
+> eliftech-frontend@0.1.0 start /Users/Li/Documents/GitHub/eliftech-frontend
+> react-scripts start
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://192.168.0.135/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /Users/Li/Documents/GitHub/eliftech-frontend/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1meliftech-frontend[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.135:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1meliftech-frontend[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.135:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+^C
+bash-3.2$ npm start
+
+> eliftech-frontend@0.1.0 start /Users/Li/Documents/GitHub/eliftech-frontend
+> react-scripts start
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://192.168.0.135/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /Users/Li/Documents/GitHub/eliftech-frontend/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+[2J[3J[H[36mStarting the development server...[39m
+[36m[39m
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1meliftech-frontend[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.135:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+
+[2J[3J[HCompiling...
+[2J[3J[H[31mFailed to compile.[39m
+[31m[39m
+./src/pages/HomePage/HomePage.js
+SyntaxError: /Users/Li/Documents/GitHub/eliftech-frontend/src/pages/HomePage/HomePage.js: JSX attributes must only be assigned a non-empty expression. (83:27)
+
+[0m [90m 81 |[39m               value[33m=[39m{password}[0m
+[0m [90m 82 |[39m               onChange[33m=[39m{onChange}[0m
+[0m[31m[1m>[22m[39m[90m 83 |[39m               endAdornment[33m=[39m{[0m
+[0m [90m    |[39m                            [31m[1m^[22m[39m[0m
+[0m [90m 84 |[39m                 [90m// <InputAdornment position="end">[39m[0m
+[0m [90m 85 |[39m                 [90m//   <IconButton[39m[0m
+[0m [90m 86 |[39m                 [90m//     aria-label="toggle password visibility"[39m[0m
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+src/pages/HomePage/HomePage.js
+  [1mLine 3:8:[22m    'Visibility' is defined but never used                [33m[4mno-unused-vars[24m[39m
+  [1mLine 4:8:[22m    'VisibilityOff' is defined but never used             [33m[4mno-unused-vars[24m[39m
+  [1mLine 5:8:[22m    'InputAdornment' is defined but never used            [33m[4mno-unused-vars[24m[39m
+  [1mLine 6:8:[22m    'IconButton' is defined but never used                [33m[4mno-unused-vars[24m[39m
+  [1mLine 22:10:[22m  'passwordShow' is assigned a value but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 22:24:[22m  'setPasswordShow' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+src/pages/HomePage/HomePage.js
+  [1mLine 3:8:[22m    'Visibility' is defined but never used                [33m[4mno-unused-vars[24m[39m
+  [1mLine 4:8:[22m    'VisibilityOff' is defined but never used             [33m[4mno-unused-vars[24m[39m
+  [1mLine 5:8:[22m    'InputAdornment' is defined but never used            [33m[4mno-unused-vars[24m[39m
+  [1mLine 6:8:[22m    'IconButton' is defined but never used                [33m[4mno-unused-vars[24m[39m
+  [1mLine 22:10:[22m  'passwordShow' is assigned a value but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 22:24:[22m  'setPasswordShow' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[2J[3J[HCompiling...
+[2J[3J[H[33mCompiled with warnings.[39m
+[33m[39m
+src/pages/HomePage/HomePage.js
+  [1mLine 18:10:[22m  'passwordShow' is assigned a value but never used     [33m[4mno-unused-vars[24m[39m
+  [1mLine 18:24:[22m  'setPasswordShow' is assigned a value but never used  [33m[4mno-unused-vars[24m[39m
+
+Search for the [4m[33mkeywords[39m[24m to learn more about each warning.
+To ignore, add [36m// eslint-disable-next-line[39m to the line before.
+
+[2J[3J[HCompiling...
+[2J[3J[H[32mCompiled successfully![39m
+
+You can now view [1meliftech-frontend[22m in the browser.
+
+  [1mLocal:[22m            http://localhost:[1m3000[22m
+  [1mOn Your Network:[22m  http://192.168.0.135:[1m3000[22m
+
+Note that the development build is not optimized.
+To create a production build, use [36mnpm run build[39m.
+

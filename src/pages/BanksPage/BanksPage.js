@@ -119,7 +119,7 @@ const BanksPage = () => {
         </>
       ) : (
         <>
-          <p>You don’t have any banks yet.</p>
+          <p className={s.not_title}>You don’t have any banks yet.</p>
           <button
             className={s.btn_add}
             onClick={() => {

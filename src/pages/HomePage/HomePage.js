@@ -1,9 +1,5 @@
 import { useState } from 'react'
 import { registration, login } from '../../service/authorization.js'
-import Visibility from '@mui/icons-material/Visibility'
-import VisibilityOff from '@mui/icons-material/VisibilityOff'
-import InputAdornment from '@mui/material/InputAdornment'
-import IconButton from '@mui/material/IconButton'
 import Input from '@mui/material/Input'
 import InputLabel from '@mui/material/InputLabel'
 import FormControl from '@mui/material/FormControl'
@@ -19,7 +15,6 @@ import {
 const HomePage = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [passwordShow, setPasswordShow] = useState(false)
 
   const registerUser = async () => {
     await registration({ email, password })
@@ -80,19 +75,6 @@ const HomePage = ({ setIsLoggedIn }) => {
               autoComplete="off"
               value={password}
               onChange={onChange}
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton
-                    aria-label="toggle password visibility"
-                    onClick={() => setPasswordShow(!passwordShow)}
-                    onMouseDown={(e) => {
-                      e.preventDefault()
-                    }}
-                  >
-                    {passwordShow ? <VisibilityOff /> : <Visibility />}
-                  </IconButton>
-                </InputAdornment>
-              }
             />
           </FormControl>
           <StyledButton
