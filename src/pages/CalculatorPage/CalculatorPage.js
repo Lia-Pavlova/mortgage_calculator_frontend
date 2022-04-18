@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import s from './CalculatorPage.module.css';
 
-// import formula from './assets/formula.png';
+import formula from '../../assets/formula.png';
 
 const CalculatorPage = () => {
   const banks = JSON.parse(localStorage.getItem('banks')) || [];
@@ -97,12 +97,11 @@ const CalculatorPage = () => {
         {payment ? (
           <div>
             <p className={s.payment}>Monthly mortgage payment: {payment}</p>
-            <img src="./assets/formula.png" alt="formula" />
 
-            {/* <img src={formula} alt="formula" className={s.formula} /> */}
+            <img src={formula} alt="formula" className={s.formula} />
 
-            <p className={s.payment}>
-              Проверила формулу, заявленную в задании ↑, и пересчитала результат вручную ещё раз -
+            <p className={s.comment}>
+              Проверила формулу, заявленную в задании, и пересчитала результат вручную ещё раз -
               считает она правильно. Перепроверьте, пожалуйста.
             </p>
           </div>

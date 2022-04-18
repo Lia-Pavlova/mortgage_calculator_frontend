@@ -1,13 +1,13 @@
-import { Link, NavLink } from 'react-router-dom'
-import { logout } from '../service/authorization.js'
-import logo from '../assets/logo.png'
-import s from './components.module.css'
+import { Link, NavLink } from 'react-router-dom';
+import { logout } from '../service/authorization.js';
+import logo from '../assets/logo.png';
+import s from './components.module.css';
 
 const Header = ({ setIsLoggedIn }) => {
-  const isLoggedIn = JSON.parse(localStorage.getItem('user'))
+  const isLoggedIn = JSON.parse(localStorage.getItem('user'));
   const logoutUser = () => {
-    logout().then(() => setIsLoggedIn(false))
-  }
+    logout().then(() => setIsLoggedIn(false));
+  };
   return (
     <div className={s.header}>
       <div className={s.content}>
@@ -51,7 +51,7 @@ const Header = ({ setIsLoggedIn }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
