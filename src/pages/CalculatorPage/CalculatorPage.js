@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import s from './CalculatorPage.module.css';
 
-import formula from '../../assets/formula.png';
-
 const CalculatorPage = () => {
   const banks = JSON.parse(localStorage.getItem('banks')) || [];
 
@@ -15,8 +13,10 @@ const CalculatorPage = () => {
   useEffect(() => {
     if (selectedBank) {
       const bank = banks.find(el => el._id === selectedBank);
-      const multiplier1 = bank?.interestRate / 12;
-      const multiplier2 = Math.pow(1 + bank?.interestRate / 12, bank?.loanTerm);
+      // const multiplier1 = bank?.interestRate / 12;
+      // const multiplier2 = Math.pow(1 + bank?.interestRate / 12, bank?.loanTerm);
+      const multiplier1 = bank?.interestRate / 100 / 12;
+      const multiplier2 = Math.pow(1 + bank?.interestRate / 100 / 12, bank?.loanTerm);
       const numerator = initialLoan * multiplier1 * multiplier2;
       const denominator = multiplier2 - 1;
       const result = numerator / denominator;
@@ -48,6 +48,10 @@ const CalculatorPage = () => {
     }
   };
 
+  const availableBanks = banks
+    .filter(el => el?.maximumLoan >= initialLoan)
+    ?.filter(el => el?.minimumDownPayment <= downPayment);
+
   return (
     <div className={s.calculator_page}>
       <div className={s.flex}>
@@ -63,7 +67,7 @@ const CalculatorPage = () => {
             </div>
           </form>
           <ul className={s.list}>
-            {banks.map(bank => {
+            {availableBanks.map(bank => {
               return (
                 <li
                   key={bank._id}
@@ -97,13 +101,6 @@ const CalculatorPage = () => {
         {payment ? (
           <div>
             <p className={s.payment}>Monthly mortgage payment: {payment}</p>
-
-            <img src={formula} alt="formula" className={s.formula} />
-
-            <p className={s.comment}>
-              Проверила формулу, заявленную в задании, и пересчитала результат вручную ещё раз -
-              считает она правильно. Перепроверьте, пожалуйста.
-            </p>
           </div>
         ) : (
           ''
